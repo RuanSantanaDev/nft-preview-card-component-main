@@ -1,3 +1,4 @@
+
 :root{
     --main-bg:hsl(217, 54%, 11%);
     --card-bg:hsl(216, 50%, 16%);
@@ -5,41 +6,49 @@
 }
 body{
     background-color: var(--main-bg);
-   
+    height: 100vh;
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 
 }
 .main-card{
     background-color:var(--card-bg);
-    border-radius: 30px;
+    border-radius: 10px;
 
 }
 .card-img{
-    background-color:hsl(216, 50%, 16%);
-    border-radius: 30px;
-
+   display:flex;
+   justify-content: center;
+    
 }
 .card-img img{
-    border-radius:20px;
+    border-radius:10px;
+    padding-top: 20px;
+    width: 300px;
 }
 .equilibrium{
     background-color:hsl(216, 50%, 16%);
-
+    
 }
 .equilibrium h1{
     color:var(--white);
     font-size:1.2em;
+    padding: 10px 15px;
+    text-align: left;
 }
-.creation{
 
+.creation{
+    display: flex;
+    align-items: center;
 }
 .creation img{
     width:40px;
     border: 1px solid white;
     border-radius: 20px;
+}
+.creation p{
+    display: inline-block;
 }
