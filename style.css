@@ -1,54 +1,103 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 :root{
     --main-bg:hsl(217, 54%, 11%);
     --card-bg:hsl(216, 50%, 16%);
+    --very-dark-blue-line:hsl(215, 32%, 27%);
     --white:hsl(0, 0%, 100%);
+    --cyan: hsl(178, 100%, 50%);
+    --soft-blue:hsl(215, 51%, 70%);
 }
 body{
     background-color: var(--main-bg);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-width: 375px;
+    max-width: 1440px;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
 }
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
-
 }
 .main-card{
     background-color:var(--card-bg);
     border-radius: 10px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 1px 48px 23px var(--main-bg);
 }
 .card-img{
-   display:flex;
-   justify-content: center;
-    
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    width: 100%; 
 }
 .card-img img{
     border-radius:10px;
-    padding-top: 20px;
-    width: 300px;
+    min-height: 250px;
+    max-height: 300px;
 }
 .equilibrium{
-    background-color:hsl(216, 50%, 16%);
-    
+    width:100%;
 }
 .equilibrium h1{
     color:var(--white);
-    font-size:1.2em;
-    padding: 10px 15px;
     text-align: left;
+    font-weight: 600;
+    padding:10px 0px 25px 0px;
 }
-
+.equilibrium p{
+    color: var(--soft-blue);
+    padding-bottom: 25px;
+    line-height: 1.6;
+}
+.equilibrium .space{
+    display: flex;
+    justify-content: space-between ;
+}
+.equilibrium .days{
+    color: var(--very-dark-blue-line);
+}
+.equilibrium .eth{
+    color: var(--cyan);
+}
+hr {
+    width: 100%; 
+	border: 0.1px solid; 
+	border-color:var(--very-dark-blue-line);
+}
 .creation{
     display: flex;
     align-items: center;
+    min-width: 100%;
 }
 .creation img{
-    width:40px;
+    width:30px;
     border: 1px solid white;
     border-radius: 20px;
+    margin-right: 20px;
 }
 .creation p{
     display: inline-block;
+    color: var(--soft-blue);
+    font-size: 0.9rem;
+}
+.creation p .name{
+    color: var(--white);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
 }
