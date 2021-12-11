@@ -34,6 +34,9 @@ body{
     max-width: 300px;
     box-shadow: 1px 48px 23px var(--main-bg);
 }
+.hover{
+    display: none;
+}
 .card-img{
     display: flex;
     align-content: space-around;
@@ -55,6 +58,9 @@ body{
     font-weight: 600;
     padding:10px 0px 25px 0px;
 }
+:hover.equilibrium h1 {
+    color: var(--cyan);
+}
 .equilibrium p{
     color: var(--soft-blue);
     padding-bottom: 25px;
@@ -70,6 +76,7 @@ body{
 .equilibrium .eth{
     color: var(--cyan);
 }
+
 hr {
     width: 100%; 
 	border: 0.1px solid; 
@@ -94,9 +101,16 @@ hr {
 .creation p .name{
     color: var(--white);
 }
+:hover.creation p .name{
+    color: var(--cyan);
+}
 .attribution {
     font-size: 11px;
     text-align: center;
+    min-width:250px;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow:1px 15px 10px var(--main-bg);
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
