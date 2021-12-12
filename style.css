@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 :root{
     --main-bg:hsl(217, 54%, 11%);
     --card-bg:hsl(216, 50%, 16%);
@@ -34,20 +35,36 @@ body{
     max-width: 300px;
     box-shadow: 1px 48px 23px var(--main-bg);
 }
-.hover{
-    display: none;
-}
 .card-img{
     display: flex;
     align-content: space-around;
     justify-content: space-around;
     padding-bottom: 15px;
-    width: 100%; 
+    
 }
 .card-img img{
     border-radius:10px;
-    min-height: 250px;
-    max-height: 300px;
+    width:100%;
+    position:relative;
+}
+.hover{
+  position:absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.none{
+    display: none;
+}
+.card-img .hover:hover{
+    background-color:hsl(178deg 86% 48% / 55%);
+}
+:hover.hover .none{
+    transition-duration: 0.5s;
+    display: inline;
 }
 .equilibrium{
     width:100%;
@@ -57,8 +74,9 @@ body{
     text-align: left;
     font-weight: 600;
     padding:10px 0px 25px 0px;
+    transition-duration: 0.5s;
 }
-:hover.equilibrium h1 {
+h1:hover{
     color: var(--cyan);
 }
 .equilibrium p{
@@ -76,7 +94,6 @@ body{
 .equilibrium .eth{
     color: var(--cyan);
 }
-
 hr {
     width: 100%; 
 	border: 0.1px solid; 
@@ -101,10 +118,11 @@ hr {
 .creation p .name{
     color: var(--white);
 }
-:hover.creation p .name{
+.creation p .name:hover{
     color: var(--cyan);
+    transition-duration: 0.5s;
 }
-.attribution {
+.attribution{
     font-size: 11px;
     text-align: center;
     min-width:250px;
@@ -112,6 +130,6 @@ hr {
     margin: 0 auto;
     box-shadow:1px 15px 10px var(--main-bg);
 }
-.attribution a { 
+.attribution a{ 
     color: hsl(228, 45%, 44%);
 }
